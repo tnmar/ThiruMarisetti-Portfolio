@@ -1,0 +1,51 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/aria": [
+      "default",
+      {
+        "aria-progressbar-name": "off"
+      }
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[referrerpolicy=no-referrer-when-downgrade]"
+        ]
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "background-color: color-mix(in srgb, var(--accent-color), transparent 90%)",
+          "border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%)",
+          "border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%)",
+          "background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%)",
+          "border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%)",
+          "border-color: color-mix(in srgb, var(--default-color), transparent 80%)",
+          "color: color-mix(in srgb, var(--default-color), transparent 70%)",
+          "color: color-mix(in srgb, var(--accent-color), transparent 25%)",
+          "border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%)",
+          "background-color: color-mix(in srgb, var(--accent-color), transparent 20%)",
+          "color: color-mix(in srgb, var(--default-color), transparent 40%)"
+        ]
+      }
+    ],
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
+    ]
+  }
+}
